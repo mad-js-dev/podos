@@ -1,0 +1,7 @@
+
+
+@each $icon-name, $content-value in $c-icons-font {
+	.icon-font-#{$icon-name}:before {
+		content: $content-value;
+	}
+}

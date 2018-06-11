@@ -1,0 +1,74 @@
+.l-featured-block {
+	@extend .mx-lg-auto;
+}
+
+.l-featured-block__image-placeholder {
+	@include make-col(12);
+}
+
+.l-featured-block__header {
+	@include make-col(12);
+	@extend .py-3;
+}
+
+.l-featured-block__content-wrapper {
+	@extend .mx-lg-0;
+}
+
+@include media-breakpoint-up(sm) {
+	.l-featured-block {
+		@include make-container;
+		@include make-container-max-widths;
+	}
+
+	.l-featured-block__media-wrapper {
+		@include make-container();
+	}
+	
+	.l-featured-block__media-inner-wrapper {
+		@include make-row;
+	}
+
+	.l-featured-block__media-item {
+		@include make-col(6);
+	}
+}
+
+@include media-breakpoint-up(md) {	
+	.l-featured-block__header {
+		@include make-col(4);
+	}
+	
+	.l-featured-block__content-wrapper {
+		@include make-row;
+	}
+
+	.l-featured-block__media-wrapper {
+		@include make-col(8);
+		@include make-container;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.l-featured-block {
+		@include make-container;
+		@include make-container-max-widths;
+		@include make-row;
+	}
+
+	.l-featured-block__image-placeholder {
+		@include make-col(4);
+	}
+	
+	.l-featured-block__header {
+		@include make-col(12);
+	}
+
+	.l-featured-block__media-wrapper {
+		@include make-col(12);
+	}
+
+	.l-featured-block__content-wrapper {
+		@include make-col(8);
+	}
+}

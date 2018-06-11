@@ -1,0 +1,154 @@
+.c-definition-list {
+	
+}
+
+.c-definition-list__wrapper {
+	@extend .mx-md-auto;
+		
+}
+
+.c-definition-list__title {
+	@include make-col(12);
+	@extend .pt-3;
+	@extend .pt-sm-3;
+	@extend .pr-sm-3;
+	@extend .p-md-0;
+
+	position: relative;
+
+	div {
+		@extend .py-1;
+		@extend .px-3;
+
+		position: absolute;	
+		bottom: 1rem;
+		background-color: rgba(0,0,0,0.1);
+		color: $white;
+		font-weight: 500;
+	}
+
+	span {
+		@extend .mr-1;
+		color: white;
+	}
+
+	@include media-breakpoint-up(sm) {
+		@include make-col(6);
+	}
+
+	@include media-breakpoint-up(md) {
+	    @include make-col(12);
+
+	    position: initial;
+	}
+}
+
+.c-definition-list__content {
+	@include make-col(12);
+	@extend .mt-3;
+}
+
+.c-definition-list__description {
+	@include make-col(12);
+}
+
+.c-definition-list__image {
+	max-width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+
+@include media-breakpoint-up(sm) {
+	.c-definition-list__wrapper {
+		@include make-row;
+	}
+
+	.c-definition-list__title {
+		div {
+			bottom: 1.5rem;
+		}
+	}
+
+	.c-definition-list__content {
+		@include make-col(6);
+	}
+
+	.c-definition-list__description {
+		@include make-col(12);
+	}
+
+	.c-definition-list__description {
+		@include make-col(12);
+	}
+
+	.c-definition-list__image {
+		min-width: 100%;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.c-definition-list {
+		@include make-row;
+		background-image:url('http://fakeimg.pl/992x416/');
+		background-repeat: none;
+		background-position: center;
+	}
+
+	.c-definition-list__wrapper {
+		@include make-container-max-widths();
+
+		height: 25rem;
+		position: relative;
+	    align-content: space-evenly;
+	    overflow: hidden;
+	}
+
+	.c-definition-list__title {
+		div {
+			z-index: 2;
+	        position: sticky;
+			width: 15rem;
+		}
+	}
+	
+	.c-definition-list__content {
+		position: absolute;
+	    bottom: 0;
+	    right: 2rem;
+	    z-index: 3;
+	    width: 20rem;
+	}
+
+	.c-definition-list__description {
+		position: absolute;
+		bottom:0; 
+		right: 0;
+		z-index: 3;
+	}
+
+	.c-definition-list__image {
+		display: none;
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    z-index: 1;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+	.c-definition-list {
+		background-image:url('http://fakeimg.pl/2000x600/');
+	}
+	
+	.c-definition-list__wrapper {
+		height: 40rem;
+	}
+
+	.c-definition-list__image {
+	    height: auto;
+	    margin-top: -6rem;
+	    width: 25rem;
+	}
+}

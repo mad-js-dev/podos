@@ -1,0 +1,74 @@
+.c-features-bussines-block {
+	@extend .mx-lg-auto;
+}
+
+.c-features-bussines-block__image-placeholder {
+	@include make-col(12);
+}
+
+.c-features-bussines-block__header {
+	@include make-col(12);
+	@extend .py-3;
+}
+
+.c-features-bussines-block__content-wrapper {
+	@extend .mx-lg-0;
+}
+
+@include media-breakpoint-up(sm) {
+	.c-features-bussines-block {
+		@include make-container;
+		@include make-container-max-widths;
+	}
+
+	.c-features-bussines-block__media-wrapper {
+		@include make-container();
+	}
+	
+	.c-features-bussines-block__media-inner-wrapper {
+		@include make-row;
+	}
+
+	.c-features-bussines-block__media-item {
+		@include make-col(6);
+	}
+}
+
+@include media-breakpoint-up(md) {	
+	.c-features-bussines-block__header {
+		@include make-col(4);
+	}
+	
+	.c-features-bussines-block__content-wrapper {
+		@include make-row;
+	}
+
+	.c-features-bussines-block__media-wrapper {
+		@include make-col(8);
+		@include make-container;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.c-features-bussines-block {
+		@include make-container;
+		@include make-container-max-widths;
+		@include make-row;
+	}
+
+	.c-features-bussines-block__image-placeholder {
+		@include make-col(4);
+	}
+	
+	.c-features-bussines-block__header {
+		@include make-col(12);
+	}
+
+	.c-features-bussines-block__media-wrapper {
+		@include make-col(12);
+	}
+
+	.c-features-bussines-block__content-wrapper {
+		@include make-col(8);
+	}
+}

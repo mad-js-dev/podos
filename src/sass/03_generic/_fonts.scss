@@ -1,0 +1,116 @@
+$separator: '-';
+@import '~svg-spritemap-webpack-plugin/sprites';
+
+@each $value, $name in $c-font-family-serif-variants {
+	$name: unquote($c-static-font-path)+$c-font-family-serif+unquote($separator)+unquote(#{$name});
+	@font-face {
+		font-family: $c-font-family-serif;
+		src: unquote('url("../')+unquote($name)+unquote(nth($font-formats, 1))+unquote('")') format(str-slice(nth($font-formats, 1),2));
+		src: unquote('url("../')+unquote($name)+unquote(nth($font-formats, 2))+unquote('")') format(str-slice(nth($font-formats, 2),2)),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 3))+unquote('")') format(str-slice(nth($font-formats, 3),2)),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 4))+unquote('")') format('truetype'),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 5))+unquote('#'+$c-font-family-serif+$separator+$name+'")') format(str-slice(nth($font-formats, 5),2)),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 1))+unquote('#iefix")') format('embedded-opentype');
+		font-weight: $value;
+		font-style: normal;
+	}
+}
+
+@each $value, $name in $c-font-family-sans-variants {
+	$name: unquote($c-static-font-path)+$c-font-family-sans+unquote($separator)+unquote(#{$name});
+	@font-face {
+		font-family: $c-font-family-sans;
+		src: unquote('url("../')+unquote($name)+unquote(nth($font-formats, 1))+unquote('")') format(str-slice(nth($font-formats, 1),2));
+		src: unquote('url("../')+unquote($name)+unquote(nth($font-formats, 2))+unquote('")') format(str-slice(nth($font-formats, 2),2)),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 3))+unquote('")') format(str-slice(nth($font-formats, 3),2)),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 4))+unquote('")') format('truetype'),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 5))+unquote('#'+$c-font-family-sans+$separator+$name+'")') format(str-slice(nth($font-formats, 5),2)),
+			 unquote('url("../')+unquote($name)+unquote(nth($font-formats, 1))+unquote('#iefix")') format('embedded-opentype');
+		font-weight: $value;
+		font-style: normal;
+	}
+}
+
+$icons-name: unquote($c-static-font-path)+$c-font-family-icons;
+@font-face {
+	font-family: $c-font-family-icons;
+	src: unquote('url("../')+unquote($icons-name)+unquote(nth($font-formats, 1))+unquote('")') format(str-slice(nth($font-formats, 1),2));
+	src: unquote('url("../')+unquote($icons-name)+unquote(nth($font-formats, 2))+unquote('")') format(str-slice(nth($font-formats, 2),2)),
+		 unquote('url("../')+unquote($icons-name)+unquote(nth($font-formats, 3))+unquote('")') format(str-slice(nth($font-formats, 3),2)),
+		 unquote('url("../')+unquote($icons-name)+unquote(nth($font-formats, 4))+unquote('")') format('truetype'),
+		 unquote('url("../')+unquote($icons-name)+unquote(nth($font-formats, 5))+unquote('#'+$c-font-family-icons+$separator+$icons-name+'")') format(str-slice(nth($font-formats, 5),2)),
+		 unquote('url("../')+unquote($icons-name)+unquote(nth($font-formats, 1))+unquote('#iefix")') format('embedded-opentype');
+}
+
+html { 
+	font-size:62.5%; 
+}
+
+body {
+	font-size: 1.397rem;
+}
+
+@include media-breakpoint-up(xs-md) {
+	body {
+		font-size: 1.5rem;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	body {
+		font-size: 1.625rem;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	body {
+		font-size: 1.444rem;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	body {
+		font-size: 1.556rem;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	body {
+		font-size: 1.856rem;
+	}
+}
+
+[class^="icon-font"]:before, [class*=" icon-font"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}

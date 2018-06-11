@@ -1,0 +1,5 @@
+@function return-modifier($string, $old, $new) {
+  $index: str-index('--', $string);
+ 
+  @return str-slice($string,  $index+1, str-length($string));
+}

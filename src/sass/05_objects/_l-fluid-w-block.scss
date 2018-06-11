@@ -1,0 +1,9 @@
+.l-fluid-w-block {
+	@include make-container;
+}
+
+.l-fluid-w-block__content {
+	@include make-container;
+	@include make-container-max-widths;
+	@extend .text-center;
+}

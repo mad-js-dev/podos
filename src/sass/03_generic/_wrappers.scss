@@ -1,0 +1,18 @@
+.block-scroll {
+	max-height: 100vh;
+    overflow: hidden;
+}
+
+//Side to side container
+.l-fullsize-block {
+ 	@extend .container;
+}
+
+//Block to side container
+.l-contentsize-block {
+	@extend .container;
+
+	& > div {
+		@include make-row();
+	}
+}

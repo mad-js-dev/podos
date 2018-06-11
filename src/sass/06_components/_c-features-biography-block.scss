@@ -1,0 +1,74 @@
+.c-features-biography-block {
+	@extend .mx-lg-auto;
+}
+
+.c-features-biography-block__image-placeholder {
+	@include make-col(12);
+}
+
+.c-features-biography-block__header {
+	@include make-col(12);
+	@extend .py-3;
+}
+
+.c-features-biography-block__content-wrapper {
+	@extend .mx-lg-0;
+}
+
+@include media-breakpoint-up(sm) {
+	.c-features-biography-block {
+		@include make-container;
+		@include make-container-max-widths;
+	}
+
+	.c-features-biography-block__media-wrapper {
+		@include make-container();
+	}
+	
+	.c-features-biography-block__media-inner-wrapper {
+		@include make-row;
+	}
+
+	.c-features-biography-block__media-item {
+		@include make-col(6);
+	}
+}
+
+@include media-breakpoint-up(md) {	
+	.c-features-biography-block__header {
+		@include make-col(4);
+	}
+	
+	.c-features-biography-block__content-wrapper {
+		@include make-row;
+	}
+
+	.c-features-biography-block__media-wrapper {
+		@include make-col(8);
+		@include make-container;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.c-features-biography-block {
+		@include make-container;
+		@include make-container-max-widths;
+		@include make-row;
+	}
+
+	.c-features-biography-block__image-placeholder {
+		@include make-col(4);
+	}
+	
+	.c-features-biography-block__header {
+		@include make-col(12);
+	}
+
+	.c-features-biography-block__media-wrapper {
+		@include make-col(12);
+	}
+
+	.c-features-biography-block__content-wrapper {
+		@include make-col(8);
+	}
+}

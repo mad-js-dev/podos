@@ -1,0 +1,16 @@
+//VARS AT 01_SETTINGS LAYER
+@import "~bootstrap/scss/buttons";
+
+.c-button {
+	color: $white;
+	width: 1.75em;
+	height: 1.75em;
+	text-shadow : 0 0  10px $black;
+	background-color: $transparent;
+	border: white;
+	font-size: 1.9em;
+
+	&:focus {
+		outline: none;
+	}
+}  
