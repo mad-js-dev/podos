@@ -1,0 +1,58 @@
+{
+	"categories": {
+		"heading": "Categorias",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna eget metus aliquam facilisis. Etiam vel scelerisque eros, at sodales massa.",
+		"ruler":"false",
+		"data": [
+			{
+				"title" : "Cardiac Clinicy",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "./statics/icons/./statics/icons/code.svg"
+			},
+			{
+				"title" : "Cancer treatement",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "./statics/icons/./statics/icons/code.svg"
+			},
+			{
+				"title" : "Diagnostic Center",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "./statics/icons/code.svg"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "./statics/icons/code.svg"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "./statics/icons/code.svg"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "./statics/icons/code.svg"
+			}
+		]
+	},
+	"map": {
+		"icon": "code",
+		"title" : "Cras ante ex, dignissim quis augue",
+		"phone": "999-123456",
+		"image" : "./statics/icons/code.svg"
+	},
+	"features": {
+		"heading": "Lorem ipsum",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna eget metus aliquam facilisis. Etiam vel scelerisque eros, at sodales massa.",
+		"ruler":"true",
+		"intro": "Donec finibus vulputate massa, ut efficitur sapien consequat ac. Proin accumsan ut dolor nec tincidunt. Integer sit amet faucibus nibh.",
+		"data": [
+			{"content": "Praesent odio enim, ultricies eu auctor quis, tempor eget ipsum."},
+			{"content": "Vestibulum blandit velit quis nisi pretium, nec efficitur odio semper."},
+			{"content": "Mauris ultricies tellus arcu, lacinia scelerisque sem tempus nec."},
+			{"content": "Duis posuere, tellus sit amet ultrices feugiat, quam justo auctor dui."},
+			{"content": "Duis pretium pellentesque felis. Quisque vitae aliquam enim."}
+		]
+	}
+}

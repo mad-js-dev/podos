@@ -1,0 +1,29 @@
+<div class="c-features-biography-block">		
+	<article class="c-features-biography-block__content-wrapper">
+		<div class="c-features-biography-block__header">
+			{{> l-content-heading
+				heading = htmlWebpackPlugin.options.data.features.heading
+				subtitle = htmlWebpackPlugin.options.data.features.subtitle
+				ruler = htmlWebpackPlugin.options.data.features.ruler
+			}}
+
+		</div>
+		<div class="c-features-biography-block__media-wrapper">
+			<div class="c-features-biography-block__media-inner-wrapper">
+				<p>
+					{{{htmlWebpackPlugin.options.data.features.intro}}}
+				</p>
+
+				<ul>
+					{{#each htmlWebpackPlugin.options.data.features.data}}
+						<li>{{{ this.content }}}</li>
+					{{/each}}
+				</ul>
+				
+				<div class="btn btn-light">	Learn more</div>
+
+			</div>
+		</div>
+	</article>
+	<div class="c-features-biography-block__image-placeholder"></div>
+</div>

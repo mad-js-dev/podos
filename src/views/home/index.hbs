@@ -1,0 +1,52 @@
+{{#> layout }}
+	{{{ htmlWebpackPlugin.options.data.title }}}
+	{{#>04_templates/l-fluid }}
+	    {{> hero/index }}
+
+	    {{#>04_templates/l-featured-block 
+	    	content-right="true" 
+	    	customClass="" 
+	    }}
+			{{#each htmlWebpackPlugin.options.data.intro.data }}
+				{{> l-media 
+					title = this.title
+					content = this.content
+					customClasses = "c-features-bussines-block__media-item"
+					image = this.image
+				}}
+			{{/each}}
+	    {{/04_templates/l-featured-block}}
+	{{/04_templates/l-fluid }}
+	
+	{{#>04_templates/l-fluid }}
+		{{> c-definition-list
+			default
+			data = htmlWebpackPlugin.options.data.categories.data
+		}}
+	{{/04_templates/l-fluid }}
+	
+	{{#>04_templates/l-fluid-w-block classid='service-features' }}
+		{{#each htmlWebpackPlugin.options.data.badges.data}}
+				<div class="card badge-card w-25 d-inline-block text-left">
+				<h4>{{{this.content}}}</h4>
+			</div>
+		{{/each}}	
+	{{/04_templates/l-fluid-w-block}}
+
+	{{#>04_templates/l-fluid }}
+	     {{#>04_templates/l-featured-block content-left="true" }}
+	    	<p>
+				{{{htmlWebpackPlugin.options.data.features.intro}}}
+			</p>
+
+			<ul>
+				{{#each htmlWebpackPlugin.options.data.features.data}}
+					<li>{{{ this.content }}}</li>
+				{{/each}}
+			</ul>
+
+			<div class="btn btn-light">	Learn more</div>
+
+	    {{/04_templates/l-featured-block}}
+	{{/04_templates/l-fluid }}
+{{/layout}}

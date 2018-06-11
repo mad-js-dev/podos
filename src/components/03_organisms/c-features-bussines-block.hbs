@@ -1,0 +1,24 @@
+<div class="c-features-bussines-block">		
+	<div class="c-features-bussines-block__image-placeholder"></div>
+	<article class="c-features-bussines-block__content-wrapper">
+		<div class="c-features-bussines-block__header">
+			{{> l-content-heading
+				heading = htmlWebpackPlugin.options.data.intro.heading
+				subtitle = htmlWebpackPlugin.options.data.intro.subtitle
+				ruler = htmlWebpackPlugin.options.data.intro.ruler
+			}}
+		</div>
+		<div class="c-features-bussines-block__media-wrapper">
+			<div class="c-features-bussines-block__media-inner-wrapper">
+				{{#each htmlWebpackPlugin.options.data.intro.data }}
+					{{> l-media 
+						title = this.title
+						content = this.content
+						customClasses = itemClass
+						image = this.image
+					}}
+				{{/each}}
+			</div>
+		</div>
+	</article>
+</div>

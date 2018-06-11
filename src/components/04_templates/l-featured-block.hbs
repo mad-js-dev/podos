@@ -1,0 +1,26 @@
+<div class="l-featured-block">
+
+	{{#if content-right }}
+		<div class="l-featured-block__image-placeholder"></div>
+	{{/if}}		
+
+	<article class="l-featured-block__content-wrapper">
+		<div class="l-featured-block__header">
+			{{> l-content-heading
+				heading = htmlWebpackPlugin.options.data.features.heading
+				subtitle = htmlWebpackPlugin.options.data.features.subtitle
+				ruler = htmlWebpackPlugin.options.data.features.ruler
+			}}
+
+		</div>
+		<div class="l-featured-block__media-wrapper">
+			<div class="l-featured-block__media-inner-wrapper">
+				{{> @partial-block }}
+			</div>
+		</div>
+	</article>
+
+	{{#if content-left }}
+		<div class="l-featured-block__image-placeholder"></div>
+	{{/if}}	
+</div>

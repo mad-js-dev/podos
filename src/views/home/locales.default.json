@@ -1,0 +1,90 @@
+{
+	"intro": {
+		"heading": "Lorem ipsum dolor sit amet",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna eget metus aliquam facilisis. Etiam vel scelerisque eros, at sodales massa.",
+		"ruler":"true",
+		"data": [
+			{
+				"title" : "Lorem Ipsum",
+				"image" : "./statics/icons/code.svg",
+				"content" : "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.",
+				"customClasses" : "col-6"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"image" : "./statics/icons/bug.svg",
+				"content" : "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.",
+				"customClasses" : "col-6"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"image" : "./statics/icons/link.svg",
+				"content" : "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.",
+				"customClasses" : "col-6"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"image" : "./statics/icons/pencil.svg",
+				"content" : "Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.",
+				"customClasses" : "col-6"
+			}
+		]
+	},
+	"categories": {
+		"heading": "Categorias",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna eget metus aliquam facilisis. Etiam vel scelerisque eros, at sodales massa.",
+		"ruler":"false",
+		"data": [
+			{
+				"title" : "Cardiac Clinicy",
+				"icon": "code",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "http://fakeimg.pl/540x320/"
+			},
+			{
+				"title" : "Cancer treatement",
+				"icon": "code",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "http://fakeimg.pl/540x320/"
+			},
+			{
+				"title" : "Diagnostic Center",
+				"icon": "code",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "http://fakeimg.pl/540x320/"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"icon": "code",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "http://fakeimg.pl/540x320/"
+			},
+			{
+				"title" : "Lorem Ipsum",
+				"icon": "code",
+				"content" : "Cras ante ex, dignissim quis augue scelerisque, posuere maximus justo. Proin et arcu risus. Praesent eleifend hendrerit pretium. Mauris aliquet finibus lectus, nec condimentum nulla fringilla nec.",
+				"image" : "http://fakeimg.pl/540x320/"
+			}
+		]
+	},
+	"badges": {
+		"data": [
+			{"content": "<p class='text-muted'>Lorem ipsum</p>dolor sit amet"},
+			{"content": "<p class='text-muted'>Lorem ipsum</p>dolor sit amet"},
+			{"content": "<p class='text-muted'>Lorem ipsum</p>dolor sit amet"}
+		]
+	},
+	"features": {
+		"heading": "Lorem ipsum",
+		"subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel magna eget metus aliquam facilisis. Etiam vel scelerisque eros, at sodales massa.",
+		"ruler":"true",
+		"intro": "Donec finibus vulputate massa, ut efficitur sapien consequat ac. Proin accumsan ut dolor nec tincidunt. Integer sit amet faucibus nibh.",
+		"data": [
+			{"content": "Praesent odio enim, ultricies eu auctor quis, tempor eget ipsum."},
+			{"content": "Vestibulum blandit velit quis nisi pretium, nec efficitur odio semper."},
+			{"content": "Mauris ultricies tellus arcu, lacinia scelerisque sem tempus nec."},
+			{"content": "Duis posuere, tellus sit amet ultrices feugiat, quam justo auctor dui."},
+			{"content": "Duis pretium pellentesque felis. Quisque vitae aliquam enim."}
+		]
+	}
+}
