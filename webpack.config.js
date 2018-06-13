@@ -58,6 +58,32 @@ module.exports = {
                     path.join(__dirname, 'src', 'helpers')
                 ]
             }
+        },
+        {
+            test: /\.(png|gif|jpg|jpeg|svg)/,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'img/',
+                    publicPath: '../img/',
+                    name: '[name].[ext]',
+                },
+
+            },
+            exclude: [
+                path.resolve(__dirname, "src/statics/fonts/")
+            ],
+        },
+        {
+            test: /\.(eot|svg|ttf|woff|woff2)/,
+            use: {
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'fonts/',
+                    publicPath: '../fonts/',
+                    name: '[name].[ext]',
+                }
+            }
         }
     ]
   },

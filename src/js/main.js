@@ -1,4 +1,6 @@
-require('../sass/index.scss');
+require('../sass/common.scss');
+require('../sass/framework.scss');
+require('../sass/utils.scss');
 
 function component() {
   var element = document.createElement('div');

@@ -1,5 +1,5 @@
+@import '~svg-spritemap-webpack-plugin/lib/templates/styles.scss';
 $separator: '-';
-@import '~svg-spritemap-webpack-plugin/sprites';
 
 @each $value, $name in $c-font-family-serif-variants {
 	$name: unquote($c-static-font-path)+$c-font-family-serif+unquote($separator)+unquote(#{$name});

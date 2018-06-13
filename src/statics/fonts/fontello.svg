@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="chevron-up" unicode="&#xe800;" d="M0 100c0-6 3-13 7-18 10-9 26-9 36 0l432 433 432-433c10-9 26-9 36 0s9 26 0 36l-450 450c-10 9-26 9-36 0l-450-450c-5-5-7-12-7-18z" horiz-adv-x="1000" />
+
+<glyph glyph-name="chevron-down" unicode="&#xe801;" d="M0 550c0 6 3 13 7 18 10 10 26 10 36 0l432-433 432 433c10 9 26 9 36 0s9-26 0-36l-450-450c-10-9-26-9-36 0l-450 450c-5 5-7 12-7 18z" horiz-adv-x="1000" />
+
+<glyph glyph-name="chevron-left" unicode="&#xe802;" d="M700-150c6 0 13 2 18 7 9 10 9 26 0 36l-433 432 433 432c9 10 9 26 0 36s-26 9-36 0l-450-450c-9-10-9-26 0-36l450-450c5-5 12-7 18-7z" horiz-adv-x="1000" />
+
+<glyph glyph-name="chevron-right" unicode="&#xe803;" d="M250-150c-6 0-13 2-18 7-9 10-9 26 0 36l433 432-433 432c-9 10-9 26 0 36s26 9 36 0l450-450c9-10 9-26 0-36l-450-450c-5-5-12-7-18-7z" horiz-adv-x="1000" />
+
+<glyph glyph-name="code" unicode="&#xe804;" d="M250 100c-6 0-13 2-18 7l-200 200c-9 10-9 26 0 36l200 200c10 9 26 9 36 0s9-26 0-36l-183-182 183-182c9-10 9-26 0-36-5-4-12-7-18-7z m500 0c-6 0-13 2-18 7-9 10-9 26 0 36l183 182-183 182c-9 10-9 26 0 36s26 9 36 0l200-200c9-10 9-26 0-36l-200-200c-5-5-12-7-18-7z m-375 0c-5 0-9 1-13 4-12 7-15 23-8 34l250 400c7 12 23 16 34 8s16-23 8-34l-250-400c-4-8-13-12-21-12z" horiz-adv-x="1000" />
+
+<glyph glyph-name="menu" unicode="&#xe805;" d="M875 550h-750c-14 0-25 11-25 25s11 25 25 25h750c14 0 25-11 25-25s-11-25-25-25z m0-250h-750c-14 0-25 11-25 25s11 25 25 25h750c14 0 25-11 25-25s-11-25-25-25z m0-250h-750c-14 0-25 11-25 25s11 25 25 25h750c14 0 25-11 25-25s-11-25-25-25z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
