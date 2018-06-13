@@ -72,5 +72,10 @@ module.exports = {
         template: './src/views/home/index.hbs',
         //inlineSource: '.(js|css)$' // embed all javascript and css inline
     }),
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  }
 };
