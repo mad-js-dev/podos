@@ -1,8 +1,8 @@
-@import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/functions";
-
+@import "~bootstrap/scss/mixins";
 
 @import "colors";
+
 @import "options";
 @import "spacings";
 @import "components-settings";
@@ -12,6 +12,9 @@
 @import "icons";
 @import "tables";
 @import "z-index";
-@import "components";
-@import "forms";
 @import "icons";
+@import "forms";
+@import "~bootstrap/scss/variables";
+@import "forms";
+
+

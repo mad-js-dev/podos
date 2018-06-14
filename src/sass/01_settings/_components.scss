@@ -1,14 +1,18 @@
-// Alerts
+/*// Alerts
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding-y:             .75em !default;
-$alert-padding-x:             1.25em !default;
-$alert-margin-bottom:         1em !default;
-$alert-border-radius:         $border-radius !default;
-$alert-link-font-weight:      $font-weight-bold !default;
-$alert-border-width:          $border-width !default;
+$alert-padding-y:                   .75rem !default;
+$alert-padding-x:                   1.25rem !default;
+$alert-margin-bottom:               1em !default;
+$alert-border-radius:               $border-radius !default;
+$alert-link-font-weight:            $font-weight-bold !default;
+$alert-border-width:                $border-width !default;
 
+$alert-bg-level:                    -10 !default;
+$alert-border-level:                -9 !default;
+$alert-color-level:                 6 !default;
+ 
 
 // Badges
 
@@ -114,10 +118,10 @@ $carousel-transition:           transform .6s ease !default;
 
 // Close
 
-$close-font-size:             $font-size-base * 1.5 !default;
-$close-font-weight:           $font-weight-bold !default;
-$close-color:                 $black !default;
-$close-text-shadow:           0 1px 0 $white !default;
+$close-font-size:                   $font-size-base * 1.5 !default;
+$close-font-weight:                 $font-weight-bold !default;
+$close-color:                       $black !default;
+$close-text-shadow:                 0 1px 0 $white !default;
 
 // Dropdowns
 //
@@ -175,7 +179,7 @@ $list-group-action-hover-color:       $list-group-action-color !default;
 $list-group-action-active-color:      $body-color !default;
 $list-group-action-active-bg:         $gray-200 !default;
 
-// Modals
+// Modals 
 
 // Padding applied to the modal body
 $modal-inner-padding:         15px !default;
@@ -299,10 +303,10 @@ $popover-body-padding-y:           9px !default;
 $popover-body-padding-x:           14px !default;
 
 $popover-arrow-width:                 10px !default;
-$popover-arrow-height:                5px !default;
+$popover-arrow-height:                5px !default; 
 $popover-arrow-color:                 $popover-bg !default;
 
-$popover-arrow-outer-width:           ($popover-arrow-width + 1px) !default;
+$popover-arrow-outer-width:           calc($popover-arrow-width + 1px) !default;
 $popover-arrow-outer-color:           fade-in($popover-border-color, .05) !default;
 
 // Progress bars
@@ -331,3 +335,4 @@ $tooltip-margin:              0 !default;
 $tooltip-arrow-width:         5px !default;
 $tooltip-arrow-height:        5px !default;
 $tooltip-arrow-color:         $tooltip-bg !default;
+*/
