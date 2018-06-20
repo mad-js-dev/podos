@@ -1,8 +1,51 @@
 .c-menu {
-	
+	@extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-light;
 }
 
-.c-menu__button {
+.c-menu__logo {
+    @extend .navbar-brand;
+}
+
+.c-menu__toggler {
+    @extend .navbar-toggler;
+    
+    span {
+        @extend .navbar-toggler-icon;
+    }
+}
+
+.c-menu__navbar-wrapper {
+    @extend .collapse;
+    @extend .navbar-collapse;
+}
+
+.c-menu__navbar {
+    @extend .navbar-nav;
+}
+
+.c-menu__item {
+    color:  pink;
+    @extend .nav-item;
+    
+    & a {
+        @extend .nav-link;
+        @include spacing('p','y', 2);
+        @include spacing('p','x', 4);
+        text-transform: uppercase;
+    }
+    
+    &--active {
+        a {
+            //.nav-link need to be overwriten in order to make BEM modifiers work;
+            color: $navbar-light-active-color!important;
+        }    
+    }
+}
+
+
+/*.c-menu__button {
 	//STRUCTURE
 	position: absolute;
 	top: .5em;
@@ -16,7 +59,7 @@
 	width: 100vw;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0;$
 	background-color: $white;
 	
 	& .close {
@@ -48,14 +91,14 @@
 		text-align: center;
 	}
 }
-
+*/
 
 @include media-breakpoint-up(lg) {	
 	.c-menu {
 		//STRUCTURE
-		@include make-col(9);
+		@include make-col(12);
 	}
-
+    /*
 	.c-menu__button {
 		//STRUCTURE
 		display: none;
@@ -89,5 +132,5 @@
 			//SPACING
 			padding: 4.5rem 1.2rem;
 		}
-	}
+	}*/
 }

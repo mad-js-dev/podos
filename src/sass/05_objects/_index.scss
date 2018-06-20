@@ -1,3 +1,11 @@
+
+@import "_l-header";
+@import "_l-featured-block";
+//@import "_l-fluid";
+@import "_l-fluid-w-block";
+@import "_c-definition-list";
+@import "_c-menu";
+
 @import "~bootstrap/scss/alert"; 
 @import "~bootstrap/scss/badge";
 @import "~bootstrap/scss/breadcrumb";
@@ -15,10 +23,3 @@
 @import "~bootstrap/scss/progress";
 @import "~bootstrap/scss/tooltip";
 @import "~bootstrap/scss/transitions";
-
-@import "_l-header";
-@import "_l-featured-block";
-//@import "_l-fluid";
-@import "_l-fluid-w-block";
-@import "_c-definition-list";
-@import "_c-menu";

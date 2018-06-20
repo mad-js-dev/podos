@@ -1,23 +1,35 @@
-<div class="c-menu">
+ <!--<div class="c-menu">
 
-  {{#>01_atoms/c-button id="c-menu__button" icon="menu" }}{{/01_atoms/c-button }}
-  <div class="c-menu__wrapper">
-    <button type="button" class="close" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <ul class="c-menu__nav text-right">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</div>
+  {{!#>01_atoms/c-button id="c-menu__button" icon="menu" }}{{!/01_atoms/c-button }}
+ -->
+    
+    <nav class="c-menu">
+      <a class="c-menu__logo" href="#">Navbar</a>
+        
+      <button class="c-menu__toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+
+      <div class="c-menu__navbar-wrapper" id="navbarSupportedContent">
+        <ul class="c-menu__navbar ml-auto">
+          <li class="c-menu__item c-menu__item--active">
+            <a href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="c-menu__item">
+            <a href="#">Link</a>
+          </li>
+           <li class="c-menu__item">
+            <a href="#">Link</a>
+          </li>
+          <li class="c-menu__item">
+            <a href="#">Link</a>
+          </li>
+          <li class="c-menu__item">
+            <a href="#">Link</a>
+          </li>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+<!--</div>-->
