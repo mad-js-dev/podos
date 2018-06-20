@@ -1,0 +1,31 @@
+@mixin spacing($prop, $variation, $size) {
+    @if($prop=='m') {
+        $prop: 'margin';
+    } @else if($prop=='p') {
+        $prop: 'padding';
+    } 
+    
+    @if($variation=='t') {
+        $variation: '-top';
+        #{$prop}#{$variation}: map-get($spacers, $size)!important;
+    } @else if($variation=='b') {
+        $variation: '-bottom';
+        #{$prop}#{$variation}: map-get($spacers, $size)!important;
+    } @else if($variation=='l') {
+        $variation: '-left';
+        #{$prop}#{$variation}: map-get($spacers, $size)!important;
+    } @else if($variation=='r') {
+        $variation: '-right';
+        #{$prop}#{$variation}: map-get($spacers, $size)!important;
+    }@else if($variation=='x') {
+        #{$prop}-right: map-get($spacers, $size)!important;
+        #{$prop}-left: map-get($spacers, $size)!important;
+    }@else if($variation=='y') {
+        #{$prop}-top: map-get($spacers, $size)!important;
+        #{$prop}-bottom: map-get($spacers, $size)!important;
+    }
+    
+    
+    
+    
+}
