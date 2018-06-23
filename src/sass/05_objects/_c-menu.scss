@@ -2,10 +2,14 @@
 	@extend .navbar;
     @extend .navbar-expand-lg;
     @extend .navbar-light;
+    
+    font-family: $c-font-family-sans;
+    font-size: 0.8em;
 }
 
 .c-menu__logo {
     @extend .navbar-brand;
+    @include spacing('p', (4 4 4 4));
 }
 
 .c-menu__toggler {
@@ -26,14 +30,15 @@
 }
 
 .c-menu__item {
-    color:  pink;
     @extend .nav-item;
     
     & a {
         @extend .nav-link;
-        @include spacing('p','y', 2);
+        @include spacing('p','y', 5);
         @include spacing('p','x', 4);
+        @include spacing('m','x', 2);
         text-transform: uppercase;
+        font-weight: 600;
     }
     
     &--active {

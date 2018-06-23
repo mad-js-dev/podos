@@ -1,9 +1,15 @@
-@mixin spacing($prop, $variation, $size) {
+@mixin spacing($prop, $variation, $size: null) {
     @if($prop=='m') {
         $prop: 'margin';
     } @else if($prop=='p') {
         $prop: 'padding';
     } 
+    
+    
+    @if($size == null) {
+         $size: $variation;
+         $variation: '';
+    }
     
     @if($variation=='t') {
         $variation: '-top';
@@ -23,6 +29,12 @@
     }@else if($variation=='y') {
         #{$prop}-top: map-get($spacers, $size)!important;
         #{$prop}-bottom: map-get($spacers, $size)!important;
+    }@else if($variation=='') {
+        @if(typeof($size) == number) {
+            #{$prop}: map-get($spacers, $size)!important;
+        } @else {
+            #{$prop}: map-get($spacers, nth($size, 1)) map-get($spacers, nth($size, 2)) map-get($spacers, nth($size, 3)) map-get($spacers, nth($size, 4))!important;
+        }
     }
     
     
