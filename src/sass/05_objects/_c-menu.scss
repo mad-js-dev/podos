@@ -4,12 +4,13 @@
     @extend .navbar-light;
     
     font-family: $c-font-family-sans;
-    font-size: 0.8em;
+    font-size: $font-size-base;
 }
 
 .c-menu__logo {
     @extend .navbar-brand;
     @include spacing('p', (4 4 4 4));
+    display: inline-block;  
 }
 
 .c-menu__toggler {

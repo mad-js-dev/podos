@@ -1,16 +1,18 @@
 @mixin spacing($prop, $variation, $size: null) {
+    //Accepts 2 or 3 arguments
+    @if($size == null) {
+         $size: $variation;
+         $variation: '';
+    }
+    
+    //Setting property shorthand
     @if($prop=='m') {
         $prop: 'margin';
     } @else if($prop=='p') {
         $prop: 'padding';
     } 
     
-    
-    @if($size == null) {
-         $size: $variation;
-         $variation: '';
-    }
-    
+    //Setting property
     @if($variation=='t') {
         $variation: '-top';
         #{$prop}#{$variation}: map-get($spacers, $size)!important;

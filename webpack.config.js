@@ -3,6 +3,7 @@
 var path = require("path"),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     MiniCssExtractPlugin = require("mini-css-extract-plugin"),
+    SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin'),
     devMode = process.env.NODE_ENV !== 'production'
 
 function recursiveIssuer(m) {
@@ -114,6 +115,12 @@ module.exports = {
             template: './src/views/home/index.hbs',
             //inlineSource: '.(js|css)$' // embed all javascript and css inline
         }),
+        new SVGSpritemapPlugin({
+            // Optional options object
+            src: './src/statics/icons/**/*.svg',
+            styles: path.join(__dirname, 'src/sass/02_tools/_sprites.scss'),
+            enforcedSvgHeight: 10
+        })
     ],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),

@@ -1,13 +1,48 @@
+$main-color: map-get($theme-colors, primary);
+
 .l-header {
+    
 	position: sticky;
 	top:0;
 	z-index: 1;
-	max-height:	0;
+	max-height:	0;  
 	background-color: $white;
+    font-size: $font-size-sm;
+    
+    .l-header__phone-info {  
+        @extend .py-1; 
+        @extend .mr-5;
+        @include icon('phone-handset', (color: $main-color));
+    }
+    
+    .l-header__phone-email{
+        @extend .py-1; 
+        @extend .mr-5;
+        @include icon('envelope', (color: $main-color));
+    }
+    
+    .l-header__phone-street{
+        @extend .py-1; 
+        @extend .mr-5;
+        @include icon('location', (color: $main-color)); 
+    }
 }
 
 .l-header__preheader {
+    @extend .position-relative;
+    @extend .py-5; 
 	display: none;
+    
+    .c-button {
+        @extend .position-absolute; 
+        right: 0; 
+        top: 0;
+        
+        span {
+            @extend .pl-4;
+            @include icon('location', (color: map-get($colors, white)));
+        }
+    }
 }
 
 .l-header__header-content {
@@ -15,8 +50,9 @@
 }
 
 .l-header__logo {
+    
 }
-
+ 
 @include media-breakpoint-up(lg) {	
 	.l-header {
 		max-height:	initial;

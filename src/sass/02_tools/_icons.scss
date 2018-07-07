@@ -1,0 +1,29 @@
+
+$variables: (
+    color: $white
+);
+
+@mixin icon($name, $user-variables: ()) {
+    $sprite: map-get($sprites, $name);
+
+    // Inject variables
+    $default-variables: map-get($variables, $name);
+    @if type-of($variables) == 'map' {
+        who: who;
+        @each $key, $value in map-merge($variables, $user-variables) {
+            @if ( not map-has-key($variables, $key) ) {
+                @warn 'Sprite \'#{$name}\' does not support variable named \'#{$key}\'';
+            }
+            
+            $sprite: sprite-str-replace($sprite, '___#{$key}___', sprite-svg-uri(quote($value)));
+            
+        }
+    } @else if type-of($user-variables) == 'map' {
+        @warn 'Sprite \'#{$name}\' does not contain any variables';
+    }
+    background-image: url($sprite);
+    background-size: 1.6rem;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
