@@ -4,11 +4,11 @@
 	    {{> hero/index }}
 
 	    {{#>04_templates/l-featured-block 
-	    	content-right="true" 
-	    	customClass="" 
+	    	content-right="true"
+	    	customClass="c-features-bussines-block" 
 	    }}
 			{{#each htmlWebpackPlugin.options.data.intro.data }}
-				{{> l-media 
+				{{> 04_templates/l-media 
 					title = this.title
 					content = this.content
 					customClasses = "c-features-bussines-block__media-item"

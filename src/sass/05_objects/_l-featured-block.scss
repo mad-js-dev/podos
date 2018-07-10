@@ -1,18 +1,37 @@
 .l-featured-block {
 	@extend .mx-lg-auto;
+    @extend .py-5;
 }
 
 .l-featured-block__image-placeholder {
 	@include make-col(12);
+    background-position-y: map-get($spacers, 3);
+    background-repeat: no-repeat; 
+}
+.l-featured-block__image-placeholder:first-child {
+    background-position-x: map-get($spacers, 3) * -1;
+}
+.l-featured-block__image-placeholder:last-child {
+    background-position-x: map-get($spacers, 3);
 }
 
 .l-featured-block__header {
 	@include make-col(12);
 	@extend .py-3;
+    & *:first-child {
+        line-height: $h3-font-size / 1.3;
+    } 
 }
 
 .l-featured-block__content-wrapper {
 	@extend .mx-lg-0;
+}
+.l-featured-block__content-wrapper:first-child {
+    @extend .pr-3;
+}
+
+.l-featured-block__content-wrapper:last-child {
+    @extend .pl-3;
 }
 
 @include media-breakpoint-up(sm) {

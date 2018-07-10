@@ -12,7 +12,7 @@
     @include spacing('p', (4 4 4 4));
     display: inline-block;  
 }
-
+ 
 .c-menu__toggler {
     @extend .navbar-toggler;
     

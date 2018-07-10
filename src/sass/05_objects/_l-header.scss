@@ -39,8 +39,8 @@ $main-color: map-get($theme-colors, primary);
         top: 0;
         
         span {
-            @extend .pl-4;
-            @include icon('location', (color: map-get($colors, white)));
+            @extend .pl-4; 
+            @include icon('location', (color: map-get($colors,  $main-color)));
         }
     }
 }
