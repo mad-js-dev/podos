@@ -1,14 +1,23 @@
 .c-definition-list {
+    //@include make-row();
 	
 }
 
 .c-definition-list__wrapper {
-	@extend .mx-md-auto;
-		
+    @include make-container;
+    @include make-container-max-widths;
+}
+.c-definition-list__container {
+    min-height: 450px;
+    @extend .py-5;
+    @extend .position-relative;
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .justify-content-between;
 }
 
 .c-definition-list__title {
-	@include make-col(12);
+	//@include make-col(12);
 	@extend .pt-3;
 	@extend .pt-sm-3;
 	@extend .pr-sm-3;
@@ -33,11 +42,11 @@
 	}
 
 	@include media-breakpoint-up(sm) {
-		@include make-col(6);
+		//@include make-col(6);
 	}
 
 	@include media-breakpoint-up(md) {
-	    @include make-col(12);
+	    //@include make-col(12);
 
 	    position: initial;
 	}
@@ -46,6 +55,11 @@
 .c-definition-list__content {
 	@include make-col(12);
 	@extend .mt-3;
+    
+    display: none;
+}
+.c-definition-list__title:hover + .c-definition-list__content {
+    display: block;
 }
 
 .c-definition-list__description {
@@ -53,15 +67,15 @@
 }
 
 .c-definition-list__image {
-	max-width: 100%;
-	margin: 0 auto;
-	display: inline-block;
+	//max-width: 100%;
+	//margin: 0 auto;
+	//display: inline-block;
 }
 
 
 @include media-breakpoint-up(sm) {
 	.c-definition-list__wrapper {
-		@include make-row;
+		//@include make-row;
 	}
 
 	.c-definition-list__title {
@@ -83,7 +97,7 @@
 	}
 
 	.c-definition-list__image {
-		min-width: 100%;
+		//min-width: 100%;
 	}
 }
 
@@ -96,19 +110,21 @@
 	}
 
 	.c-definition-list__wrapper {
-		@include make-container-max-widths();
+		//@include make-container-max-widths();
 
-		height: 25rem;
-		position: relative;
-	    align-content: space-evenly;
-	    overflow: hidden;
+		//height: 25rem;
+		//position: relative;
+	    //align-content: space-evenly;
+	    //overflow: hidden;
 	}
 
 	.c-definition-list__title {
+        $width: 17rem;
+        width: $width;
 		div {
 			z-index: 2;
 	        position: sticky;
-			width: 15rem;
+			width: $width;
 		}
 	}
 	
@@ -128,12 +144,12 @@
 	}
 
 	.c-definition-list__image {
-		display: none;
-		position: absolute;
-	    top: 0;
-	    left: 0;
-	    height: 100%;
-	    z-index: 1;
+		//display: none;
+		//position: absolute;
+	    //top: 0;
+	    //left: 0;
+	    //height: 100%;
+	    //z-index: 1;
     }
 }
 
@@ -143,12 +159,12 @@
 	}
 	
 	.c-definition-list__wrapper {
-		height: 40rem;
+		//height: 40rem;
 	}
 
 	.c-definition-list__image {
-	    height: auto;
-	    margin-top: -6rem;
-	    width: 25rem;
+	    //height: auto;
+	    //margin-top: -6rem;
+	    //width: 25rem;
 	}
 }

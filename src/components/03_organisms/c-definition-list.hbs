@@ -1,18 +1,20 @@
 <div class="c-definition-list">
-	<dl class="c-definition-list__wrapper">
-		{{#each data }}
-			<dt class="c-definition-list__title">
-				<div class="icon-{{this.icon}}">
-					<span></span>
-					{{this.title}}
-				</div>
-				<img class="c-definition-list__image" src="{{this.image}}" alt="">
-			</dt>
-			<dd class="c-definition-list__content">
-				<p class="c-definition-list__description">
-					{{this.content}}
-				</p>
-			</dd>
-		{{/each}}
+	<div class="c-definition-list__wrapper">
+        <dl class="c-definition-list__container">
+            {{#each data }}
+                <dt class="c-definition-list__title">
+                    <div class="icon-{{this.icon}}">
+                        <span></span>
+                        {{this.title}}
+                    </div>
+                    <!-- <img class="c-definition-list__image" src="{{this.image}}" alt=""> -->
+                </dt>
+                <dd class="c-definition-list__content">
+                    <p class="c-definition-list__description">
+                        {{this.content}}
+                    </p>
+                </dd>
+            {{/each}}
+        </div>
 	</dl>
 </div>
